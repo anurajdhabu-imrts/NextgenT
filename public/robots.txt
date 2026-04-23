@@ -1,2 +1,12 @@
+# NextgenT Enterprises — Robots.txt
+# https://nextgent.com
+
 User-agent: *
-Disallow: 
+Allow: /
+Disallow: /writable/
+Disallow: /app/
+Disallow: /vendor/
+Disallow: /tests/
+
+# Sitemap
+Sitemap: https://nextgent.com/sitemap.xml
