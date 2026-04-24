@@ -267,12 +267,7 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                 <a href="<?= base_url('team') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Team</a>
                 <a href="<?= base_url('contact') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Contact Us</a>
 
-                <div class="pt-6 sm:hidden">
-                    <a href="<?= base_url('contact') ?>"
-                        class="block text-center bg-navy text-white py-3 rounded-xl font-extrabold text-lg shadow-xl shadow-blue-100">
-                        Get Consultation
-                    </a>
-                </div>
+              
             </div>
         </div>
     </header>
