@@ -21,11 +21,11 @@
                     One-Stop Solution for
                     <span class="text-teal-accent">Hospitals</span>
                     &amp;
-                    <span class="text-teal-accent">Hospitality</span>
+                    <span class="text-teal-accent">Healthcare</span>
                 </h1>
 
                 <p data-aos="fade-up" data-aos-delay="300" class="mt-5 text-base sm:text-lg text-slate-200 leading-7 max-w-xl">
-                    NextgenT Enterprises supports healthcare and hospitality businesses with end-to-end expertise across
+                    NextgenT Enterprises supports healthcare businesses with end-to-end expertise across
                     manpower, marketing, management, and operations.
                 </p>
 
@@ -244,53 +244,37 @@
         </div>
 
         <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-center">
 
             <!-- Card 1: Core Strategic Services -->
             <div data-aos="fade-up" data-aos-delay="0"
-                class="bg-white px-6 py-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-navy/5 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-navy group-hover:scale-105 transition-all duration-300">
+                class="bg-white px-6 py-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-14 h-14 bg-navy/5 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-navy group-hover:scale-105 transition-all duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-navy group-hover:text-white transition-colors duration-300" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-navy mb-2">Core Strategic Services</h3>
+                <h3 class="text-xl font-bold text-navy mb-3">Core Strategic Services</h3>
                 <p class="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-                    Feasibility studies, infrastructure planning, team structuring, branding, and end-to-end project execution for new and growing businesses.
+                    Feasibility studies, infrastructure planning, team structuring, branding, and end-to-end project execution for new and growing healthcare businesses.
                 </p>
             </div>
 
             <!-- Card 2: Hospital Solutions -->
             <div data-aos="fade-up" data-aos-delay="100"
-                class="bg-white px-6 py-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-teal-accent/5 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-teal-accent group-hover:scale-105 transition-all duration-300">
+                class="bg-white px-6 py-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-14 h-14 bg-teal-accent/5 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-accent group-hover:scale-105 transition-all duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-teal-accent group-hover:text-white transition-colors duration-300" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-navy mb-2">Hospital Solutions</h3>
+                <h3 class="text-xl font-bold text-navy mb-3">Hospital Solutions</h3>
                 <p class="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
                     Specialized support for hospitals including insurance coordination, staffing, compliance readiness, patient flow, and operational management.
-                </p>
-            </div>
-
-            <!-- Card 3: Hospitality Solutions -->
-            <div data-aos="fade-up" data-aos-delay="200"
-                class="bg-white px-6 py-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-[#0D9488]/5 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-[#0D9488] group-hover:scale-105 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[#0D9488] group-hover:text-white transition-colors duration-300" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold text-navy mb-2">Hospitality Solutions</h3>
-                <p class="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-                    Tailored hospitality support covering revenue improvement, guest experience, workforce training, brand positioning, and service operations.
                 </p>
             </div>
 
@@ -376,69 +360,6 @@
             </div>
         </div>
 
-        <!-- Hospitality Sector Block (Image Right / Content Left with different bg) -->
-        <div
-            class="rounded-3xl bg-slate-50 border border-slate-100/50 p-6 sm:p-10 lg:p-0 lg:bg-transparent lg:border-none">
-            <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
-                <!-- Image Column -->
-                <div class="w-full lg:w-1/2" data-aos="fade-left">
-                    <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 h-[340px] group">
-                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80"
-                            alt="Hospitality Industry"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                        <div class="absolute inset-0 bg-navy/5"></div>
-                    </div>
-                </div>
-
-                <!-- Content Column -->
-                <div class="w-full lg:w-1/2" data-aos="fade-right">
-                    <div class="space-y-5 lg:pl-10">
-                        <div class="flex items-center gap-2">
-                            <span
-                                class="text-[10px] font-bold tracking-[0.2em] uppercase text-navy bg-slate-200 px-2 py-1 rounded">Industry
-                                Focus</span>
-                            <div class="h-[1px] w-8 bg-navy/20"></div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="shrink-0 w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-navy">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                </svg>
-                            </div>
-                            <h2 class="text-3xl md:text-4xl font-bold text-navy">Hotels & Hospitality Sector</h2>
-                        </div>
-                        <p class="text-slate-600 text-base leading-relaxed max-w-xl">
-                            Optimizing guest experiences and revenue performance through meticulously planned management
-                            systems and specialized standard operating procedures.
-                        </p>
-                        <div class="flex flex-wrap gap-3">
-                            <span
-                                class="inline-flex items-center rounded-md bg-white border border-slate-200 px-3 py-1 text-xs font-semibold text-navy">Yield
-                                Management</span>
-                            <span
-                                class="inline-flex items-center rounded-md bg-white border border-slate-200 px-3 py-1 text-xs font-semibold text-navy">Guest
-                                Journey Maps</span>
-                            <span
-                                class="inline-flex items-center rounded-md bg-white border border-slate-200 px-3 py-1 text-xs font-semibold text-navy">Brand
-                                Standards</span>
-                        </div>
-                        <div class="pt-2">
-                            <a href="/hospitality-sector" class="text-navy font-bold text-sm inline-flex items-center group">
-                                Explore More
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -525,8 +446,7 @@
                         AM</div>
                     <div>
                         <h4 class="font-bold text-navy text-base leading-tight">Dr. Arvind Mehta</h4>
-                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Director, Metro Hospital
-                            Group</p>
+                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Director, Metro Hospital Group</p>
                     </div>
                 </div>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed italic">
@@ -541,15 +461,14 @@
                 <div class="flex items-center gap-4 mb-5">
                     <div
                         class="w-12 h-12 rounded-full bg-teal-accent flex items-center justify-center text-white font-bold text-sm transition-transform group-hover:scale-110">
-                        ST</div>
+                        RP</div>
                     <div>
-                        <h4 class="font-bold text-navy text-base leading-tight">Sarah Thompson</h4>
-                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide">CEO, Azure Resorts</p>
+                        <h4 class="font-bold text-navy text-base leading-tight">Rajesh Prasad</h4>
+                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Managing Director, LifeCare Clinics</p>
                     </div>
                 </div>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed italic">
-                    "From feasibility studies to branding, their team provided end-to-end growth support that directly
-                    impacted our resort's peak-season occupancy levels."
+                    "Their 4M Framework transformed our revenue cycle management, reducing claim rejections significantly and improving our overall financial sustainability."
                 </p>
             </div>
         </div>
@@ -598,7 +517,7 @@
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5 ml-1">Industry</label>
                                 <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-teal-accent focus:ring-4 focus:ring-teal-accent/5 transition-all outline-none text-sm appearance-none bg-white">
                                     <option>Hospital Sector</option>
-                                    <option>Hospitality Sector</option>
+                                    <option>Diagnostic / Clinics</option>
                                 </select>
                             </div>
                             <div>

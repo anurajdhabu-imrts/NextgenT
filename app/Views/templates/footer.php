@@ -14,7 +14,7 @@
                     <span class="text-white font-bold text-xl tracking-tight">Nextgen<span class="text-teal-accent">T</span><span class="text-slate-500 font-medium text-lg ml-0.5">.</span></span>
                 </div>
                 <p class="text-sm leading-relaxed font-normal max-w-[240px]">
-                    Leading transformation in healthcare and hospitality through strategic advisory and operational excellence.
+                    Leading transformation in the healthcare and hospital sector through strategic advisory and operational excellence.
                 </p>
             </div>
 

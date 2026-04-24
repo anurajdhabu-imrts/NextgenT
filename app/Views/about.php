@@ -19,8 +19,7 @@
                 </h1>
 
                 <p class="text-lg md:text-xl text-slate-300 leading-relaxed">
-                    A premier strategic consulting firm dedicated to transforming the landscape of healthcare and
-                    hospitality through innovation, precision, and the power of our structured 4M Framework.
+                    A premier strategic consulting firm dedicated to transforming the landscape of healthcare and hospital management through innovation, precision, and our structured 4M Framework.
                 </p>
             </div>
 
@@ -40,9 +39,7 @@
                 <h2 class="text-3xl font-bold text-navy mb-6">Our Journey & Purpose</h2>
                 <div class="space-y-4 text-slate-600 leading-relaxed">
                     <p>
-                      NextgenT Enterprises is a comprehensive business solutions company specialising in the healthcare (hospitals) 
-and hospitality sectors. The company positions itself as a single point of contact — a true one-stop solution — 
-for any project requirement within these two industries, both in India and internationally. 
+                        NextgenT Enterprises is a comprehensive business solutions company specialising exclusively in the healthcare and hospital sector. The company positions itself as a single point of contact — a true one-stop solution — for any project requirement within this industry, both in India and internationally. 
                     </p>
                     <p>
                         The company is built on a robust four-pillar model called the 4M Framework: Manpower, Marketing, 
@@ -73,7 +70,7 @@ lifecycle from initial concept to ongoing daily operations.
                 <p class="text-slate-600 leading-relaxed">
                     To deliver transformative business solutions through our 4M Framework, empowering our clients to
                     achieve sustainable growth, operational efficiency, and world-class service delivery in the
-                    healthcare and hospitality domains.
+                    healthcare and hospital sector.
                 </p>
             </div>
             <!-- Vision Card -->
@@ -89,8 +86,8 @@ lifecycle from initial concept to ongoing daily operations.
                 </div>
                 <h3 class="text-2xl font-bold text-navy mb-4">Our Vision</h3>
                 <p class="text-slate-600 leading-relaxed">
-                    To be the global authority in strategic management for hospitality and healthcare, redefining
-                    industry standards through technology, integrity, and a relentless commitment to client success.
+                    To be the global authority in strategic management for the healthcare sector, redefining
+                    industry standards through technology, integrity, and a relentless commitment to hospital success.
                 </p>
             </div>
         </div>
@@ -119,7 +116,7 @@ lifecycle from initial concept to ongoing daily operations.
                             India Operations
                         </h3>
                         <p class="text-sm text-slate-500 leading-relaxed">
-                            Strong operational presence across India running Pan-India project execution, providing specialized support for hospitals and hospitality businesses.
+                            Strong operational presence across India running Pan-India project execution, providing specialized support for hospitals and healthcare facilities.
                         </p>
                     </div>
 
@@ -244,8 +241,7 @@ lifecycle from initial concept to ongoing daily operations.
                     <span class="font-bold">02</span>
                 </div>
                 <h4 class="font-bold text-navy mb-2 group-hover:text-white">Industry Expertise</h4>
-                <p class="text-sm text-slate-500 group-hover:text-slate-300">Specialized knowledge in both high-end
-                    hospitality and medical sectors.</p>
+                <p class="text-sm text-slate-500 group-hover:text-slate-300">Specialized knowledge in the high-end hospital and medical sector.</p>
             </div>
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center text-center group hover:bg-navy transition-all duration-300"
                 data-aos="fade-up" data-aos-delay="200">
@@ -276,7 +272,7 @@ lifecycle from initial concept to ongoing daily operations.
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Ready to Scale Your Project?</h2>
         <p class="text-slate-300 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            Let our experts help you design and manage your next hospital or hospitality venture with precision.
+            Let our experts help you design and manage your next hospital or healthcare venture with precision.
         </p>
         <div data-aos="fade-up" data-aos-delay="200">
             <a href="<?= base_url('contact') ?>"

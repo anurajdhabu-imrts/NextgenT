@@ -19,7 +19,7 @@
                 </h1>
 
                 <p class="text-lg text-slate-300 leading-relaxed">
-                    NextgenT Enterprises has a cross-functional leadership team with specialists covering all operational areas, driving transformation across healthcare and hospitality.
+                    NextgenT Enterprises has a cross-functional leadership team with specialists covering all operational areas, driving transformation across the healthcare and hospital sector.
                 </p>
             </div>
 
@@ -32,7 +32,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
         <h2 class="text-3xl font-bold text-navy mb-4">Our Cross-Functional Experts</h2>
         <p class="text-slate-500 mb-12 max-w-2xl mx-auto">
-            Our specialized leadership ensures unparalleled execution and strict standard compliance for both hospitals and hotels.
+            Our specialized leadership ensures unparalleled execution and strict standard compliance for hospitals and healthcare institutions.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-left">
@@ -63,7 +63,7 @@
                 <p class="text-teal-accent text-sm font-semibold mb-3">Marketing Manager</p>
                 <div class="w-8 h-[2px] bg-slate-100 mb-3 group-hover:bg-teal-accent transition-colors"></div>
                 <p class="text-sm text-slate-500 leading-relaxed">
-                    Hospital & hospitality brand building, digital marketing, and patient/guest acquisition strategies.
+                    Hospital brand building, digital marketing, and patient acquisition strategies.
                 </p>
             </div>
 
@@ -93,7 +93,7 @@
                 <p class="text-teal-accent text-sm font-semibold mb-3">Operations Manager</p>
                 <div class="w-8 h-[2px] bg-slate-100 mb-3 group-hover:bg-teal-accent transition-colors"></div>
                 <p class="text-sm text-slate-500 leading-relaxed">
-                    Day-to-day hospital and hospitality operations oversight, vendor coordination, and performance management.
+                    Day-to-day hospital operations oversight, vendor coordination, and performance management.
                 </p>
             </div>
 

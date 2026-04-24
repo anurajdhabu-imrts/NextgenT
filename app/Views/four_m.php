@@ -19,7 +19,7 @@
                     The <span class="text-teal-accent">4M</span> Framework
                 </h1>
                 <p class="text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-                    The foundational strategic system behind every NextgenT engagement. Four integrated pillars that cover the complete hospital and hospitality value chain — from workforce to revenue.
+                    The foundational strategic system behind every NextgenT engagement. Four integrated pillars that cover the complete hospital and healthcare value chain — from workforce to revenue.
                 </p>
             </div>
         </div>
@@ -86,7 +86,7 @@
                                 <h3 class="text-lg font-bold text-navy leading-tight">Marketing</h3>
                             </div>
                         </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Strategic brand positioning, digital marketing, patient/guest acquisition, and revenue-linked campaigns.</p>
+                        <p class="text-sm text-slate-500 leading-relaxed">Strategic brand positioning, digital marketing, patient acquisition, and revenue-linked campaigns.</p>
                     </div>
 
                     <!-- Q3: Management (Bottom-Left) -->
@@ -190,7 +190,7 @@
                 </div>
                 <h2 class="text-2xl md:text-3xl font-bold text-navy mb-3">Manpower</h2>
                 <p class="text-sm text-slate-500 leading-relaxed max-w-md">
-                    End-to-end workforce solutions — from role identification and recruitment to onboarding and ongoing training. We ensure hospitals and hospitality units are staffed with skilled, certified professionals who are aligned to institutional goals.
+                    End-to-end workforce solutions — from role identification and recruitment to onboarding and ongoing training. We ensure hospital units are staffed with skilled, certified professionals who are aligned to institutional goals.
                 </p>
             </div>
 
@@ -202,7 +202,7 @@
                     </div>
                     <div>
                         <h4 class="text-sm font-bold text-navy mb-0.5">Role Identification & Recruitment</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed">JD creation, candidate screening, and verified credential-based hiring for clinical, non-clinical, and hospitality roles.</p>
+                        <p class="text-sm text-slate-500 leading-relaxed">JD creation, candidate screening, and verified credential-based hiring for clinical and non-clinical hospital roles.</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-xl border border-slate-100 p-5 flex items-start gap-4 hover:shadow-sm transition-shadow">
@@ -243,7 +243,7 @@
                 </div>
                 <h2 class="text-2xl md:text-3xl font-bold text-navy mb-3">Marketing</h2>
                 <p class="text-sm text-slate-500 leading-relaxed max-w-md">
-                    Specialised hospital and hospitality marketing — brand positioning, digital marketing, patient/guest acquisition strategies, community outreach, and revenue-linked marketing campaigns designed for measurable growth.
+                    Specialised hospital marketing — brand positioning, digital marketing, patient acquisition strategies, community outreach, and revenue-linked marketing campaigns designed for measurable growth.
                 </p>
             </div>
 
@@ -272,8 +272,8 @@
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-navy mb-0.5">Patient / Guest Acquisition Strategies</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed">Referral network development, community health camps, OTA channel optimisation, and conversion funnel management.</p>
+                        <h4 class="text-sm font-bold text-navy mb-0.5">Patient Acquisition Strategies</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">Referral network development, community health camps, digital channel optimisation, and conversion funnel management.</p>
                     </div>
                 </div>
             </div>
@@ -349,7 +349,7 @@
                 </div>
                 <h2 class="text-2xl md:text-3xl font-bold text-navy mb-3">Operations</h2>
                 <p class="text-sm text-slate-500 leading-relaxed max-w-md">
-                    Full-spectrum operations management — daily operational oversight, quality control, vendor management, inventory, housekeeping, and monthly revenue performance tracking to ensure consistent output and efficiency.
+                    Full-spectrum hospital operations management — daily operational oversight, quality control, vendor management, inventory, housekeeping, and monthly revenue performance tracking to ensure consistent output and efficiency.
                 </p>
             </div>
 
@@ -361,7 +361,7 @@
                     </div>
                     <div>
                         <h4 class="text-sm font-bold text-navy mb-0.5">Daily Operational Oversight</h4>
-                        <p class="text-sm text-slate-500 leading-relaxed">Workflow supervision, shift management, patient/guest flow coordination, and real-time issue resolution across departments.</p>
+                        <p class="text-sm text-slate-500 leading-relaxed">Workflow supervision, shift management, patient flow coordination, and real-time issue resolution across departments.</p>
                     </div>
                 </div>
                 <div class="bg-slate-50 rounded-xl border border-slate-100 p-5 flex items-start gap-4 hover:shadow-sm transition-shadow">
@@ -394,16 +394,16 @@
 <section class="py-14 bg-navy">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-white">One Framework. Two Industries.</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">One Framework. Total Excellence.</h2>
             <p class="mt-3 text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
-                The 4M Framework powers every engagement — whether you're building a hospital or launching a hotel.
+                The 4M Framework powers every engagement — providing a strategic architecture for every healthcare project we touch.
             </p>
             <div class="w-16 h-1 bg-teal-accent mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            <!-- Hospital Card -->
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-7 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
+        <!-- Centered Hospital Card -->
+        <div class="flex justify-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="max-w-lg w-full bg-white/5 border border-white/10 rounded-2xl p-7 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-xl bg-teal-accent/20 flex items-center justify-center text-teal-accent">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
@@ -435,40 +435,6 @@
                     </a>
                 </div>
             </div>
-
-            <!-- Hospitality Card -->
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-7 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
-                <div class="flex items-center gap-3 mb-5">
-                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-white">Hotels & Hospitality</h3>
-                </div>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                        <span class="text-teal-accent mt-0.5">•</span>
-                        <span><strong class="text-white">Manpower</strong> — GMs, front-desk, chefs, housekeeping</span>
-                    </li>
-                    <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                        <span class="text-teal-accent mt-0.5">•</span>
-                        <span><strong class="text-white">Marketing</strong> — OTA listings, brand positioning, campaigns</span>
-                    </li>
-                    <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                        <span class="text-teal-accent mt-0.5">•</span>
-                        <span><strong class="text-white">Management</strong> — FSSAI, fire safety, financial advisory</span>
-                    </li>
-                    <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                        <span class="text-teal-accent mt-0.5">•</span>
-                        <span><strong class="text-white">Operations</strong> — Guest experience, F&B, vendor oversight</span>
-                    </li>
-                </ul>
-                <div class="mt-5">
-                    <a href="<?= base_url('hospitality-sector') ?>" class="text-white text-sm font-bold inline-flex items-center group/link">
-                        Explore Hospitality Sector
-                        <svg class="w-4 h-4 ml-1 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -484,7 +450,7 @@
                 Built on Strategy. Delivered with Precision.
             </h2>
             <p class="text-slate-300 text-base max-w-2xl mx-auto leading-relaxed mb-8">
-                The 4M Framework is not just a model — it's the engine behind every successful hospital and hotel engagement we deliver. Let us show you how it works for your project.
+                The 4M Framework is not just a model — it's the engine behind every successful hospital and healthcare engagement we deliver. Let us show you how it works for your project.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="<?= base_url('services') ?>"

@@ -2,8 +2,8 @@
 // Merge with defaults in case $seo is not fully populated
 $seo = $seo ?? [];
 $pageTitle       = $seo['title']          ?? 'NextgenT Enterprises | Corporate Excellence';
-$pageDescription = $seo['description']    ?? 'NextgenT Enterprises — Strategic architecture for Hospitals & Hospitality.';
-$pageKeywords    = $seo['keywords']       ?? 'Hospital Management, Hospitality Services';
+$pageDescription = $seo['description']    ?? 'NextgenT Enterprises — Strategic architecture for Hospitals.';
+$pageKeywords    = $seo['keywords']       ?? 'Hospital Management, Healthcare Operations, Hospital Consulting';
 $pageCanonical   = $seo['canonical']      ?? base_url(uri_string());
 $ogTitle         = $seo['og_title']       ?? $pageTitle;
 $ogDescription   = $seo['og_description'] ?? $pageDescription;
@@ -44,7 +44,7 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
     <meta name="twitter:image" content="<?= esc($ogImage) ?>">
 
     <!-- Favicon -->
-    <link rel="icon" href="<?= base_url('favicon.ico') ?>" type="image/x-icon">
+    <link rel="icon" href="<?= base_url('FAVICON.png') ?>" type="image/png">
 
     <!-- Tailwind CSS Integration with Custom Palette -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -86,7 +86,7 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
         "name": "NextgenT Enterprises",
         "url": "<?= base_url() ?>",
         "logo": "<?= base_url('assets/img/og-image.jpg') ?>",
-        "description": "A comprehensive business solutions company specialising in healthcare and hospitality sectors.",
+        "description": "A comprehensive business solutions company specialising in the healthcare and hospital sector.",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "123 Corporate Blvd, Business District",
@@ -196,26 +196,19 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                     <a href="<?= base_url('services') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Services</a>
                     <a href="<?= base_url('4m-framework') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">4M Framework</a>
 
-                    <!-- Industries Dropdown -->
+                    <!-- Industries Dropdown (Simple) -->
                     <div class="relative group h-full flex items-center">
-                        <button
-                            class="menu-link text-[13.5px] font-semibold text-[#000080]/90 flex items-center group-hover:text-teal-600">
+                        <button class="menu-link text-[13.5px] font-semibold text-[#000080]/90 flex items-center gap-1 focus:outline-none">
                             Industries
-                            <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
+                            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <!-- Dropdown Menu -->
-                        <div
-                            class="dropdown-menu absolute top-full -left-4 w-56 bg-white rounded-xl border border-gray-50 py-3 mt-1">
-                            <a href="<?= base_url('hospital-sector') ?>"
-                                class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700 transition">Hospital
-                                Sector</a>
-                            <a href="<?= base_url('hospitality-sector') ?>"
-                                class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-teal-700 transition">Hospitality
-                                Sector</a>
+                        
+                        <div class="dropdown-menu absolute top-full left-0 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="bg-white rounded-xl shadow-lg border border-gray-100 mt-2 py-1 overflow-hidden">
+                                <a href="<?= base_url('hospital-sector') ?>" class="block px-4 py-2.5 text-[13px] font-semibold text-navy hover:bg-teal-50 hover:text-teal-accent transition-colors">
+                                    Hospital Sector
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -258,20 +251,14 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                 <a href="<?= base_url('services') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Services</a>
                 <a href="<?= base_url('4m-framework') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">4M Framework</a>
 
-                <div class="py-2">
-                    <button onclick="toggleMobileDropdown()"
-                        class="w-full flex justify-between items-center text-lg font-bold text-[#000080]">
-                        <span>Industries</span>
-                        <svg id="arrow" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                <!-- Industries Dropdown Mobile -->
+                <div class="space-y-3">
+                    <button onclick="toggleMobileDropdown()" class="flex items-center justify-between w-full text-lg font-bold text-[#000080] hover:text-teal-600">
+                        Industries
+                        <svg id="arrow" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
                     </button>
-                    <div id="mobile-industries" class="hidden mt-4 pl-6 space-y-4 border-l-4 border-teal-50">
-                        <a href="<?= base_url('hospital-sector') ?>" class="block text-base font-semibold text-gray-600 hover:text-teal-600">Hospital
-                            Sector</a>
-                        <a href="<?= base_url('hospitality-sector') ?>" class="block text-base font-semibold text-gray-600 hover:text-teal-600">Hospitality
-                            Sector</a>
+                    <div id="mobile-industries" class="hidden pl-4 space-y-4 pt-2">
+                        <a href="<?= base_url('hospital-sector') ?>" class="block text-[15px] font-semibold text-slate-500 hover:text-teal-accent">Hospital Sector</a>
                     </div>
                 </div>
 

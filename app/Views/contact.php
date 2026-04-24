@@ -98,8 +98,8 @@
                                 <label class="block text-xs font-bold uppercase tracking-widest text-[#000080]/60 mb-2 ml-1">Industry Focus *</label>
                                 <select class="w-full px-5 py-4 rounded-xl border border-slate-200 outline-none focus:border-teal-accent focus:ring-4 focus:ring-teal-accent/5 transition-all text-sm font-medium bg-white appearance-none">
                                     <option>Hospital Sector</option>
-                                    <option>Hospitality Sector</option>
                                     <option>Project Identification</option>
+                                    <option>Operational Audit</option>
                                     <option>Other</option>
                                 </select>
                             </div>
