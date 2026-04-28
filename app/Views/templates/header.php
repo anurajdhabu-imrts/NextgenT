@@ -196,8 +196,9 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                     <a href="<?= base_url('services') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Services</a>
                     <a href="<?= base_url('4m-framework') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">4M Framework</a>
 
+
                     <!-- Industries Dropdown (Simple) -->
-                    <div class="relative group h-full flex items-center">
+                    <!-- <div class="relative group h-full flex items-center">
                         <button class="menu-link text-[13.5px] font-semibold text-[#000080]/90 flex items-center gap-1 focus:outline-none">
                             Industries
                             <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
@@ -210,11 +211,10 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <a href="<?= base_url('projects') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Projects / Case
-                        Studies</a>
-                    <a href="<?= base_url('team') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Team</a>
+                    <a href="<?= base_url('projects') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Projects</a>
+                    <!-- <a href="<?= base_url('team') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Team</a> -->
                     <a href="<?= base_url('contact') ?>" class="menu-link text-[13.5px] font-semibold text-[#000080]/90">Contact Us</a>
                 </nav>
 
@@ -252,7 +252,7 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                 <a href="<?= base_url('4m-framework') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">4M Framework</a>
 
                 <!-- Industries Dropdown Mobile -->
-                <div class="space-y-3">
+                <!-- <div class="space-y-3">
                     <button onclick="toggleMobileDropdown()" class="flex items-center justify-between w-full text-lg font-bold text-[#000080] hover:text-teal-600">
                         Industries
                         <svg id="arrow" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
@@ -260,11 +260,10 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
                     <div id="mobile-industries" class="hidden pl-4 space-y-4 pt-2">
                         <a href="<?= base_url('hospital-sector') ?>" class="block text-[15px] font-semibold text-slate-500 hover:text-teal-accent">Hospital Sector</a>
                     </div>
-                </div>
+                </div> -->
 
-                <a href="<?= base_url('projects') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Projects / Case
-                    Studies</a>
-                <a href="<?= base_url('team') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Team</a>
+                <a href="<?= base_url('projects') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Projects</a>
+                <!-- <a href="<?= base_url('team') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Team</a> -->
                 <a href="<?= base_url('contact') ?>" class="block text-lg font-bold text-[#000080] hover:text-teal-600">Contact Us</a>
 
               

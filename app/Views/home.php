@@ -14,19 +14,15 @@
             <div class="max-w-2xl text-white">
                 <span data-aos="fade-up" data-aos-delay="100"
                     class="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs sm:text-sm font-medium tracking-wide">
-                    Corporate Excellence & Growth Partners
+                    <?= esc($hero['subtitle']) ?>
                 </span>
 
                 <h1 data-aos="fade-up" data-aos-delay="200" class="mt-5 text-4xl sm:text-5xl lg:text-5xl font-bold leading-tight">
-                    One-Stop Solution for
-                    <span class="text-teal-accent">Hospitals</span>
-                    &amp;
-                    <span class="text-teal-accent">Healthcare</span>
+                    <?= esc($hero['title']) ?>
                 </h1>
 
                 <p data-aos="fade-up" data-aos-delay="300" class="mt-5 text-base sm:text-lg text-slate-200 leading-7 max-w-xl">
-                    NextgenT Enterprises supports healthcare businesses with end-to-end expertise across
-                    manpower, marketing, management, and operations.
+                    <?= esc($hero['description']) ?>
                 </p>
 
                 <div data-aos="fade-up" data-aos-delay="400" class="mt-8 flex flex-col sm:flex-row gap-4">
@@ -50,8 +46,8 @@
         
         <!-- Section Header -->
         <div class="text-center mb-8" data-aos="fade-up">
-            <span class="text-teal-accent font-bold tracking-[0.2em] uppercase text-[10px] bg-teal-50 px-3 py-1 rounded-full">Strategic Architecture</span>
-            <h2 class="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-navy leading-tight">Our 4M Framework</h2>
+            <span class="text-teal-accent font-bold tracking-[0.2em] uppercase text-[10px] bg-teal-50 px-3 py-1 rounded-full"><?= esc($framework['subtitle']) ?></span>
+            <h2 class="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-navy leading-tight"><?= esc($framework['title']) ?></h2>
             <div class="w-16 h-1 bg-teal-accent mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -59,44 +55,44 @@
             
             <!-- Mobile Layout (Clean Stack) - Hidden on LG -->
             <div class="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-                <!-- Manpower (Mobile) -->
+                <!-- <?= esc($m1['title']) ?> (Mobile) -->
                 <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
                     <div class="shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-navy border border-slate-50">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-navy mb-1">Manpower</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Elite recruitment ensuring world-class certified professionals.</p>
+                        <h3 class="text-lg font-bold text-navy mb-1"><?= esc($m1['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed"><?= esc($m1['description']) ?></p>
                     </div>
                 </div>
-                <!-- Marketing (Mobile) -->
+                <!-- <?= esc($m2['title']) ?> (Mobile) -->
                 <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
                     <div class="shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-teal-accent border border-slate-50">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-navy mb-1">Marketing</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Strategic acquisition frameworks for national positioning.</p>
+                        <h3 class="text-lg font-bold text-navy mb-1"><?= esc($m2['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed"><?= esc($m2['description']) ?></p>
                     </div>
                 </div>
-                <!-- Management (Mobile) -->
+                <!-- <?= esc($m3['title']) ?> (Mobile) -->
                 <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
                     <div class="shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-navy-light border border-slate-50">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-navy mb-1">Management</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Institutional excellence via robust financial governance.</p>
+                        <h3 class="text-lg font-bold text-navy mb-1"><?= esc($m3['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed"><?= esc($m3['description']) ?></p>
                     </div>
                 </div>
-                <!-- Operations (Mobile) -->
+                <!-- <?= esc($m4['title']) ?> (Mobile) -->
                 <div class="p-6 bg-slate-50/80 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
                     <div class="shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0D9488] border border-slate-50">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-navy mb-1">Operations</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Optimizing supply chains for maximum output efficiency.</p>
+                        <h3 class="text-lg font-bold text-navy mb-1"><?= esc($m4['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed"><?= esc($m4['description']) ?></p>
                     </div>
                 </div>
             </div>
@@ -106,24 +102,24 @@
                 
                 <!-- Left Labels -->
                 <div class="flex flex-col gap-14 w-[30%]">
-                    <!-- Column 1: Manpower -->
+                    <!-- Column 1: <?= esc($m1['title']) ?> -->
                     <div class="framework-card group text-right relative cursor-pointer" data-index="0">
                         <div class="inline-flex items-center justify-center w-12 h-12 bg-navy/5 rounded-xl mb-2 text-navy transition-all duration-500 group-hover:bg-navy group-hover:text-white group-hover:-translate-y-1 shadow-sm border border-navy/5">
                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-navy">Manpower</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px] ml-auto">Elite recruitment and onboarding strategies for world-class professionals.</p>
+                        <h3 class="text-xl font-bold text-navy"><?= esc($m1['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px] ml-auto"><?= esc($m1['description']) ?></p>
                         <!-- Thicker Connector -->
                         <div class="absolute -right-6 top-10 w-6 h-[2px] bg-slate-100 group-hover:bg-navy transition-colors duration-500"></div>
                     </div>
 
-                    <!-- Column 3: Management -->
+                    <!-- Column 3: <?= esc($m3['title']) ?> -->
                     <div class="framework-card group text-right relative cursor-pointer" data-index="2">
                         <div class="inline-flex items-center justify-center w-12 h-12 bg-navy/5 rounded-xl mb-2 text-navy-light transition-all duration-500 group-hover:bg-navy-light group-hover:text-white group-hover:-translate-y-1 shadow-sm border border-navy/5">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-navy">Management</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px] ml-auto">Governance excellence and financial health via robust strategic implementation.</p>
+                        <h3 class="text-xl font-bold text-navy"><?= esc($m3['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px] ml-auto"><?= esc($m3['description']) ?></p>
                         <!-- Thicker Connector -->
                         <div class="absolute -right-6 top-10 w-6 h-[2px] bg-slate-100 group-hover:bg-navy-light transition-colors duration-500"></div>
                     </div>
@@ -168,24 +164,24 @@
 
                 <!-- Right Labels -->
                 <div class="flex flex-col gap-14 w-[30%]">
-                    <!-- Column 2: Marketing -->
+                    <!-- Column 2: <?= esc($m2['title']) ?> -->
                     <div class="framework-card group text-left relative cursor-pointer" data-index="1">
                         <div class="inline-flex items-center justify-center w-12 h-12 bg-teal-accent/5 rounded-xl mb-2 text-teal-accent transition-all duration-500 group-hover:bg-teal-accent group-hover:text-white group-hover:-translate-y-1 shadow-sm border border-teal-accent/5">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-navy">Marketing</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px]">Bespoke patient acquisition frameworks that elevate national brand positioning.</p>
+                        <h3 class="text-xl font-bold text-navy"><?= esc($m2['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px]"><?= esc($m2['description']) ?></p>
                          <!-- Thicker Connector -->
                          <div class="absolute -left-6 top-10 w-6 h-[2px] bg-slate-100 group-hover:bg-teal-accent transition-colors duration-500"></div>
                     </div>
 
-                    <!-- Column 4: Operations -->
+                    <!-- Column 4: <?= esc($m4['title']) ?> -->
                     <div class="framework-card group text-left relative cursor-pointer" data-index="3">
                         <div class="inline-flex items-center justify-center w-12 h-12 bg-teal-accent/5 rounded-xl mb-2 text-[#0D9488] transition-all duration-500 group-hover:bg-[#0D9488] group-hover:text-white group-hover:-translate-y-1 shadow-sm border border-teal-accent/5">
                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         </div>
-                        <h3 class="text-xl font-bold text-navy">Operations</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px]">Optimizing supply chains and daily performance for maximum institutional output.</p>
+                        <h3 class="text-xl font-bold text-navy"><?= esc($m4['title']) ?></h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mt-1.5 max-w-[240px]"><?= esc($m4['description']) ?></p>
                         <!-- Thicker Connector -->
                         <div class="absolute -left-6 top-10 w-6 h-[2px] bg-slate-100 group-hover:bg-[#0D9488] transition-colors duration-500"></div>
                     </div>
@@ -234,49 +230,33 @@
 
 
 <!-- Services Section -->
-<section id="services" class="bg-white py-16">
+<section id="services" class="bg-white py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <!-- Section Header -->
         <div class="mb-10" data-aos="fade-up">
-            <span class="text-teal-accent font-bold tracking-[0.2em] uppercase text-[10px] bg-teal-50 px-3 py-1 rounded-full">What We Do</span>
-            <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy">Our Specialized Services</h2>
+            <span class="text-teal-accent font-bold tracking-[0.2em] uppercase text-[10px] bg-teal-50 px-3 py-1 rounded-full"><?= esc($services_header['subtitle']) ?></span>
+            <h2 class="mt-4 text-3xl md:text-4xl font-bold text-navy"><?= esc($services_header['title']) ?></h2>
             <div class="w-16 h-1 bg-teal-accent mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-center">
+        <!-- Services Flex Container -->
+        <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
 
-            <!-- Card 1: Core Strategic Services -->
-            <div data-aos="fade-up" data-aos-delay="0"
-                class="bg-white px-6 py-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-navy/5 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-navy group-hover:scale-105 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-navy group-hover:text-white transition-colors duration-300" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
-                    </svg>
+            <?php foreach($services as $index => $service): ?>
+            <!-- Card <?= $index + 1 ?> -->
+            <div data-aos="fade-up" data-aos-delay="<?= $index * 100 ?>"
+                class="w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] max-w-sm bg-white px-6 py-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-25 h-10 flex rounded-lg items-center justify-center mx-auto mb-1 group-hover:bg-navy group-hover:scale-105 transition-all duration-300">
+                    <div class="text-navy group-hover:text-white transition-colors duration-300">
+                        <?= $service['icon'] ?>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-navy mb-3">Core Strategic Services</h3>
+                <h3 class="text-xl font-bold text-navy mb-3"><?= esc($service['title']) ?></h3>
                 <p class="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-                    Feasibility studies, infrastructure planning, team structuring, branding, and end-to-end project execution for new and growing healthcare businesses.
+                    <?= esc($service['description']) ?>
                 </p>
             </div>
-
-            <!-- Card 2: Hospital Solutions -->
-            <div data-aos="fade-up" data-aos-delay="100"
-                class="bg-white px-6 py-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-                <div class="w-14 h-14 bg-teal-accent/5 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-accent group-hover:scale-105 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-teal-accent group-hover:text-white transition-colors duration-300" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-navy mb-3">Hospital Solutions</h3>
-                <p class="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-                    Specialized support for hospitals including insurance coordination, staffing, compliance readiness, patient flow, and operational management.
-                </p>
-            </div>
+            <?php endforeach; ?>
 
         </div>
 
@@ -295,7 +275,7 @@
 
 
 <!-- Industries Served Section -->
-<section id="industries" class="bg-white py-16">
+<section id="industries" class="bg-white py-5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Hospital Sector Block (Image Left) -->
@@ -329,7 +309,7 @@
                                     d="M19.423 15.621a11.215 11.215 0 01-1.423 3.67l-1.29-3.58a1.69 1.69 0 00-3.09 0l-1.29 3.58a11.215 11.215 0 01-1.423-3.67m1.29-3.58L15 8.5l1.29 3.58m0 0a1.69 1.69 0 013.09 0l1.29 3.58M9 4.5v3m3-3v3m3-3v3M9 15h3v3H9v-3z" />
                             </svg>
                         </div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-navy">Healthcare & Hospital Sector</h2>
+                        <h2 class="text-3xl md:text-4xl font-bold text-navy"> Hospital Sector</h2>
                     </div>
                     <p class="text-slate-600 text-base leading-relaxed max-w-xl">
                         Delivering operational excellence and strategic growth solutions for modern healthcare
@@ -366,60 +346,23 @@
 
 
 <!-- Statistics Section -->
-<section class="py-16 bg-navy text-white stats-trigger overflow-hidden" data-aos="fade-up">
+<section class="py-10 bg-navy text-white stats-trigger overflow-hidden" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <!-- Stat 1 -->
-            <div class="space-y-2" data-aos="fade-up" data-aos-delay="100">
+            
+            <?php foreach($statistics as $index => $stat): ?>
+            <!-- Stat <?= $index + 1 ?> -->
+            <div class="space-y-2" data-aos="fade-up" data-aos-delay="<?= ($index + 1) * 100 ?>">
                 <div class="flex justify-center mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-accent" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <div class="text-teal-accent">
+                        <?= $stat['icon'] ?>
+                    </div>
                 </div>
-                <div class="text-4xl md:text-5xl font-bold text-teal-accent leading-none stat-number" data-target="15">0</div>
-                <p class="text-xs sm:text-sm font-medium uppercase tracking-widest text-slate-300">Years of Experience
-                </p>
+                <div class="text-4xl md:text-5xl font-bold text-teal-accent leading-none stat-number" data-target="<?= esc($stat['number']) ?>">0</div>
+                <p class="text-xs sm:text-sm font-medium uppercase tracking-widest text-slate-300"><?= esc($stat['label']) ?></p>
             </div>
-            <!-- Stat 2 -->
-            <div class="space-y-2" data-aos="fade-up" data-aos-delay="200">
-                <div class="flex justify-center mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-accent" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-teal-accent leading-none stat-number" data-target="250">0</div>
-                <p class="text-xs sm:text-sm font-medium uppercase tracking-widest text-slate-300">Projects Executed</p>
-            </div>
-            <!-- Stat 3 -->
-            <div class="space-y-2" data-aos="fade-up" data-aos-delay="300">
-                <div class="flex justify-center mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-accent" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-teal-accent leading-none stat-number" data-target="12">0</div>
-                <p class="text-xs sm:text-sm font-medium uppercase tracking-widest text-slate-300">States Covered</p>
-            </div>
-            <!-- Stat 4 -->
-            <div class="space-y-2" data-aos="fade-up" data-aos-delay="400">
-                <div class="flex justify-center mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-accent" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                </div>
-                <div class="text-4xl md:text-5xl font-bold text-teal-accent leading-none stat-number" data-target="500">0</div>
-                <p class="text-xs sm:text-sm font-medium uppercase tracking-widest text-slate-300">Team Strength</p>
-            </div>
+            <?php endforeach; ?>
+
         </div>
     </div>
 </section>
@@ -437,40 +380,26 @@
 
         <!-- Testimonial Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <!-- Testimonial 1 -->
-            <div data-aos="fade-up" data-aos-delay="100"
+            
+            <?php foreach($testimonials as $index => $t): ?>
+            <!-- Testimonial <?= $index + 1 ?> -->
+            <div data-aos="fade-up" data-aos-delay="<?= ($index + 1) * 100 ?>"
                 class="bg-slate-50 border border-slate-100 rounded-2xl p-6 sm:p-8 shadow-sm transition hover:shadow-xl hover:-translate-y-1 group">
                 <div class="flex items-center gap-4 mb-5">
                     <div
-                        class="w-12 h-12 rounded-full bg-navy flex items-center justify-center text-white font-bold text-sm transition-transform group-hover:scale-110">
-                        AM</div>
+                        class="w-12 h-12 rounded-full <?= $index % 2 == 0 ? 'bg-navy' : 'bg-teal-accent' ?> flex items-center justify-center text-white font-bold text-sm transition-transform group-hover:scale-110">
+                        <?= esc($t['initials']) ?></div>
                     <div>
-                        <h4 class="font-bold text-navy text-base leading-tight">Dr. Arvind Mehta</h4>
-                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Director, Metro Hospital Group</p>
+                        <h4 class="font-bold text-navy text-base leading-tight"><?= esc($t['name']) ?></h4>
+                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide"><?= esc($t['role']) ?></p>
                     </div>
                 </div>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed italic">
-                    "NextgenT’s operations management and audit strategies helped us identify critical gaps and
-                    streamline our clinical efficiency across multiple hospital units."
+                    "<?= esc($t['quote']) ?>"
                 </p>
             </div>
+            <?php endforeach; ?>
 
-            <!-- Testimonial 2 -->
-            <div data-aos="fade-up" data-aos-delay="200"
-                class="bg-slate-50 border border-slate-100 rounded-2xl p-6 sm:p-8 shadow-sm transition hover:shadow-xl hover:-translate-y-1 group">
-                <div class="flex items-center gap-4 mb-5">
-                    <div
-                        class="w-12 h-12 rounded-full bg-teal-accent flex items-center justify-center text-white font-bold text-sm transition-transform group-hover:scale-110">
-                        RP</div>
-                    <div>
-                        <h4 class="font-bold text-navy text-base leading-tight">Rajesh Prasad</h4>
-                        <p class="text-xs font-medium text-slate-500 uppercase tracking-wide">Managing Director, LifeCare Clinics</p>
-                    </div>
-                </div>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed italic">
-                    "Their 4M Framework transformed our revenue cycle management, reducing claim rejections significantly and improving our overall financial sustainability."
-                </p>
-            </div>
         </div>
     </div>
 </section>
@@ -544,7 +473,7 @@
 </section> -->
 
 <!-- CTA -->
-<section id="contact" class="pb-24 bg-white" data-aos="fade-up">
+<!-- <section id="contact" class="pb-24 bg-white" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
             class="rounded-3xl bg-gradient-to-br from-navy via-navy-light to-navy p-10 md:p-14 text-center shadow-xl shadow-navy/5 group">
@@ -563,7 +492,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <?= $this->include('templates/footer') ?>
