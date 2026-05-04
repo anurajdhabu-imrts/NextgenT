@@ -176,6 +176,42 @@ $pageType        = $seo['page_type']      ?? 'WebPage';
 
 <body class="bg-gray-50/30">
 
+    <!-- Global Toast Notification -->
+    <?php if(session()->getFlashdata('success') || session()->getFlashdata('error')): ?>
+        <div id="global-toast" class="fixed top-24 right-6 min-w-[300px] z-[9999] transition-all duration-500 transform translate-x-full">
+            <div class="bg-white rounded-2xl shadow-2xl border border-slate-100 p-5 flex items-center gap-4">
+                <?php if(session()->getFlashdata('success')): ?>
+                    <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-teal-accent">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-navy">Success!</p>
+                        <p class="text-[11px] text-slate-500 font-medium"><?= session()->getFlashdata('success') ?></p>
+                    </div>
+                <?php else: ?>
+                    <div class="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center text-red-500">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-navy">Error</p>
+                        <p class="text-[11px] text-slate-500 font-medium"><?= session()->getFlashdata('error') ?></p>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toast = document.getElementById('global-toast');
+                setTimeout(() => {
+                    toast.classList.remove('translate-x-full');
+                    setTimeout(() => {
+                        toast.classList.add('translate-x-full');
+                    }, 5000);
+                }, 500);
+            });
+        </script>
+    <?php endif; ?>
+
     <header class="nav-sticky border-b border-gray-100 shadow-sm">
         <div class="max-w-[1440px] mx-auto px-6 lg:px-10 h-full">
             <div class="flex justify-between items-center h-full">

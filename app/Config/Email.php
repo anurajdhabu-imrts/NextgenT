@@ -18,7 +18,7 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
+    public string $protocol = 'smtp';
 
     /**
      * The server path to Sendmail.
@@ -31,7 +31,7 @@ class Email extends BaseConfig
     public string $SMTPHost = '';
 
     /**
-     * Which SMTP authentication method to use: login, plain
+     * SMTP Authentication Method
      */
     public string $SMTPAuthMethod = 'login';
 
@@ -48,12 +48,12 @@ class Email extends BaseConfig
     /**
      * SMTP Port
      */
-    public int $SMTPPort = 25;
+    public int $SMTPPort = 587;
 
     /**
      * SMTP Timeout (in seconds)
      */
-    public int $SMTPTimeout = 5;
+    public int $SMTPTimeout = 60;
 
     /**
      * Enable persistent SMTP connections
@@ -61,28 +61,9 @@ class Email extends BaseConfig
     public bool $SMTPKeepAlive = false;
 
     /**
-     * SMTP Encryption.
-     *
-     * @var string '', 'tls' or 'ssl'. 'tls' will issue a STARTTLS command
-     *             to the server. 'ssl' means implicit SSL. Connection on port
-     *             465 should set this to ''.
+     * SMTP Encryption. Either tls or ssl
      */
     public string $SMTPCrypto = 'tls';
-
-    /**
-     * Enable word-wrap
-     */
-    public bool $wordWrap = true;
-
-    /**
-     * Character count to wrap at
-     */
-    public int $wrapChars = 76;
-
-    /**
-     * Type of mail, either 'text' or 'html'
-     */
-    public string $mailType = 'text';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
@@ -95,7 +76,7 @@ class Email extends BaseConfig
     public bool $validate = false;
 
     /**
-     * Email Priority. 1 = highest. 5 = lowest. 3 = normal
+     * Email Priority. 1 = highest. 5 = lowest. 3 = normal.
      */
     public int $priority = 3;
 
@@ -110,7 +91,22 @@ class Email extends BaseConfig
     public string $newline = "\r\n";
 
     /**
-     * Enable BCC Batch Mode.
+     * Type of mail. Either text or html
+     */
+    public string $mailType = 'html';
+
+    /**
+     * Character set (utf-8, iso-8859-1, etc.)
+     */
+    public bool $wordWrap = true;
+
+    /**
+     * Character count to wrap at
+     */
+    public int $wrapChars = 76;
+
+    /**
+     * Whether to send as a "BCC batch"
      */
     public bool $BCCBatchMode = false;
 
@@ -120,7 +116,21 @@ class Email extends BaseConfig
     public int $BCCBatchSize = 200;
 
     /**
-     * Enable notify message from server
+     * Whether to send as a "BCC batch"
      */
     public bool $DSN = false;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->fromEmail  = env('email.fromEmail', 'reedhigohel563@gmail.com');
+        $this->fromName   = env('email.fromName', 'NextgenT Enterprises');
+        $this->SMTPHost   = env('email.SMTPHost', 'smtp.gmail.com');
+        $this->SMTPUser   = env('email.SMTPUser', 'reedhigohel563@gmail.com');
+        $this->SMTPPass   = env('email.SMTPPass', 'bsrsfdimwafickmf');
+        $this->SMTPPort   = (int) env('email.SMTPPort', 587);
+        $this->SMTPCrypto = env('email.SMTPCrypto', 'tls');
+        $this->mailType   = env('email.mailType', 'html');
+    }
 }

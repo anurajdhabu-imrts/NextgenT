@@ -4,7 +4,7 @@
 <section class="relative w-full overflow-hidden bg-navy">
     <div class="absolute inset-0">
         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80"
-            alt="Leadership & Team"
+            alt="NextgenT Enterprises Leadership and Team — Healthcare Professionals"
             class="w-full h-[350px] md:h-[400px] object-cover opacity-20" />
         <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-transparent"></div>
     </div>

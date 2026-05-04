@@ -26,7 +26,7 @@ function style_title($title) {
 <section class="relative overflow-hidden bg-navy py-20 lg:py-28">
     <div class="absolute inset-0">
         <img src="<?= esc($hero['image']) ?>"
-            alt="Hospital Sector" class="w-full h-full object-cover opacity-20" />
+            alt="<?= esc($hero['title']) ?> — NextgenT Enterprises Healthcare Consulting" class="w-full h-full object-cover opacity-20" />
         <div class="absolute inset-0 bg-navy/80 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-transparent"></div>
     </div>
@@ -58,7 +58,7 @@ function style_title($title) {
                             <span class="text-teal-accent font-bold"><?= str_pad($index + 1, 2, '0', STR_PAD_LEFT) ?></span>
                         </div>
                         <div>
-                            <h4 class="text-navy font-bold text-lg mb-1"><?= esc($item['title']) ?></h4>
+                            <h3 class="text-navy font-bold text-lg mb-1"><?= esc($item['title']) ?></h3>
                             <p class="text-slate-500 text-sm"><?= esc($item['description']) ?></p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ function style_title($title) {
             <div class="lg:w-1/2" data-aos="fade-left">
                 <div class="relative">
                     <div class="absolute inset-0 bg-teal-accent rounded-3xl transform translate-x-4 translate-y-4 opacity-20"></div>
-                    <img src="<?= esc($complexity['image']) ?>" alt="Hospital Management Challenge" class="relative rounded-3xl shadow-xl w-full object-cover h-[500px]" />
+                    <img src="<?= esc($complexity['image']) ?>" alt="<?= esc($complexity['title']) ?> — Hospital Operations and Compliance Challenges" class="relative rounded-3xl shadow-xl w-full object-cover h-[500px]" />
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@ function style_title($title) {
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <?php foreach($solutions as $index => $item): ?>
             <div class="p-6 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-lg transition-all" data-aos="fade-up" <?= $index > 0 ? 'data-aos-delay="'.($index * 100).'"' : '' ?>>
-                <h4 class="text-navy font-bold mb-2"><?= esc($item['title']) ?></h4>
+                <h3 class="text-navy font-bold mb-2"><?= esc($item['title']) ?></h3>
                 <p class="text-sm text-slate-500"><?= esc($item['description']) ?></p>
             </div>
             <?php endforeach; ?>

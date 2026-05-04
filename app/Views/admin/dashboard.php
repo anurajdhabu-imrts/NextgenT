@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | NextgenT Admin</title>
+    <link rel="icon" href="<?= base_url('FAVICON.png') ?>" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -54,10 +55,6 @@
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
                     Manage Services
                 </a>
-                <button class="bg-white text-navy border border-gray-100 px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-50 transition-all shadow-sm flex items-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
-                    Export Reports
-                </button>
             </div>
 
             <!-- Stats Grid -->
@@ -106,8 +103,8 @@
                         </div>
                         <span class="animate-pulse w-2 h-2 bg-red-500 rounded-full"></span>
                     </div>
-                    <p class="text-gray-500 text-sm font-medium">Testimonials</p>
-                    <h3 class="text-2xl font-bold text-navy mt-1"><?= $total_testimonials ?></h3>
+                    <p class="text-gray-500 text-sm font-medium">New Enquiries</p>
+                    <h3 class="text-2xl font-bold text-navy mt-1"><?= $total_enquiries ?></h3>
                 </div>
             </div>
 
@@ -115,7 +112,7 @@
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <div class="px-6 py-5 border-b border-gray-50 flex items-center justify-between">
                     <h3 class="font-bold text-navy">Recent Enquiries</h3>
-                    <a href="#" class="text-xs font-bold text-teal-accent hover:underline uppercase tracking-wider">View All</a>
+                    <a href="<?= base_url('admin/enquiries') ?>" class="text-xs font-bold text-teal-accent hover:underline uppercase tracking-wider">View All</a>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left">
@@ -129,58 +126,45 @@
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-50">
-                            <!-- Table Row 1 -->
-                            <tr class="hover:bg-gray-50/50 transition-colors group">
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-full bg-navy/5 flex items-center justify-center text-[10px] font-bold text-navy">JD</div>
-                                        <div>
-                                            <p class="text-sm font-semibold text-gray-700">John Doe</p>
-                                            <p class="text-[11px] text-gray-400">john@example.com</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span class="text-sm text-gray-600">Hospital Strategic Planning</span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span class="text-sm text-gray-500">Oct 24, 2023</span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span class="px-2.5 py-1 rounded-lg bg-yellow-50 text-yellow-600 text-[10px] font-bold uppercase tracking-wide">Pending</span>
-                                </td>
-                                <td class="px-6 py-4 text-right">
-                                    <button class="p-2 text-gray-400 hover:text-navy hover:bg-white rounded-lg transition-all group-hover:shadow-sm">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                                    </button>
-                                </td>
-                            </tr>
-                            <!-- Table Row 2 -->
-                            <tr class="hover:bg-gray-50/50 transition-colors group">
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-full bg-teal-accent/5 flex items-center justify-center text-[10px] font-bold text-teal-accent">AS</div>
-                                        <div>
-                                            <p class="text-sm font-semibold text-gray-700">Alice Smith</p>
-                                            <p class="text-[11px] text-gray-400">alice@company.com</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span class="text-sm text-gray-600">NABH Compliance Audit</span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span class="text-sm text-gray-500">Oct 23, 2023</span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span class="px-2.5 py-1 rounded-lg bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-wide">Contacted</span>
-                                </td>
-                                <td class="px-6 py-4 text-right">
-                                    <button class="p-2 text-gray-400 hover:text-navy hover:bg-white rounded-lg transition-all group-hover:shadow-sm">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                                    </button>
-                                </td>
-                            </tr>
+                            <?php if(!empty($recent_enquiries)): ?>
+                                <?php foreach($recent_enquiries as $row): ?>
+                                    <tr class="hover:bg-gray-50/50 transition-colors group">
+                                        <td class="px-6 py-4">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 rounded-full bg-navy/5 flex items-center justify-center text-[10px] font-bold text-navy">
+                                                    <?= strtoupper(substr($row['name'], 0, 2)) ?>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm font-semibold text-gray-700"><?= esc($row['name']) ?></p>
+                                                    <p class="text-[11px] text-gray-400"><?= esc($row['email']) ?></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="text-sm text-gray-600"><?= esc($row['industry_focus'] ?? 'N/A') ?></span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="text-sm text-gray-500"><?= date('M d, Y', strtotime($row['created_at'])) ?></span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <?php if($row['status'] == 'New'): ?>
+                                                <span class="px-2.5 py-1 rounded-lg bg-yellow-50 text-yellow-600 text-[10px] font-bold uppercase tracking-wide">Pending</span>
+                                            <?php else: ?>
+                                                <span class="px-2.5 py-1 rounded-lg bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-wide">Read</span>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <a href="<?= base_url('admin/enquiries') ?>" class="p-2 text-gray-400 hover:text-navy hover:bg-white rounded-lg transition-all group-hover:shadow-sm">
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td colspan="5" class="px-6 py-10 text-center text-gray-400 text-sm">No enquiries found.</td>
+                                </tr>
+                            <?php endif; ?>
                         </tbody>
                     </table>
                 </div>
@@ -195,29 +179,6 @@
 
     </div>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        const sidebar = document.getElementById('sidebar');
-        const overlay = document.getElementById('sidebar-overlay');
-        const mobileToggle = document.getElementById('mobile-sidebar-toggle');
-        const closeSidebar = document.getElementById('sidebar-close');
-
-        function openMenu() {
-            sidebar.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
-        }
-
-        function closeMenu() {
-            sidebar.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
-
-        mobileToggle.addEventListener('click', openMenu);
-        closeSidebar.addEventListener('click', closeMenu);
-        overlay.addEventListener('click', closeMenu);
-    </script>
 
 </body>
 </html>

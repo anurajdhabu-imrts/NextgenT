@@ -4,7 +4,7 @@
 <section class="relative overflow-hidden bg-navy py-20 lg:py-28">
     <div class="absolute inset-0">
         <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=80"
-            alt="Industries" class="w-full h-full object-cover opacity-20" />
+            alt="Industries Served by NextgenT Enterprises — Healthcare and Hospitality" class="w-full h-full object-cover opacity-20" />
         <div class="absolute inset-0 bg-navy/60"></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -29,7 +29,7 @@
                     <div class="absolute top-8 left-8 py-2 px-6 bg-white/90 backdrop-blur rounded-full text-navy font-bold text-xs tracking-widest uppercase shadow-xl">Healthcare</div>
                 </div>
                 <div class="p-10 lg:p-14">
-                    <h3 class="text-3xl font-bold text-navy mb-6">Hospital & Healthcare</h3>
+                    <h2 class="text-3xl font-bold text-navy mb-6">Hospital & Healthcare</h2>
                     <p class="text-slate-600 mb-8 leading-relaxed">
                         From greenfield hospital development to operational auditing, we provide strategic architecture for modern medical facilities with a focus on clinical efficiency and patient satisfaction.
                     </p>
@@ -53,7 +53,7 @@
                     <div class="absolute top-8 left-8 py-2 px-6 bg-white/90 backdrop-blur rounded-full text-teal-accent-dark font-bold text-xs tracking-widest uppercase shadow-xl">Hospitality</div>
                 </div>
                 <div class="p-10 lg:p-14">
-                    <h3 class="text-3xl font-bold text-navy mb-6">Hotels, Resorts & Tourism</h3>
+                    <h2 class="text-3xl font-bold text-navy mb-6">Hotels, Resorts & Tourism</h2>
                     <p class="text-slate-600 mb-8 leading-relaxed">
                         Our hospitality wing focuses on guest-centric operations, brand standard development, and revenue management strategies that drive high-season occupancy and yield performance.
                     </p>

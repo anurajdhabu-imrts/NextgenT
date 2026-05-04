@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page Manager | NextgenT Admin</title>
+    <link rel="icon" href="<?= base_url('FAVICON.png') ?>" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -37,39 +38,6 @@
 
         <main class="p-6 flex-1">
             
-            <!-- Toast Notification -->
-            <?php if(session()->getFlashdata('success') || session()->getFlashdata('error')): ?>
-                <div id="toast" class="fixed top-24 right-6 min-w-[300px] z-[100] transition-all duration-500 transform translate-x-full">
-                    <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 flex items-center gap-4">
-                        <?php if(session()->getFlashdata('success')): ?>
-                            <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center text-green-500">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-sm font-bold text-navy">Success!</p>
-                                <p class="text-[11px] text-gray-500 font-medium"><?= session()->getFlashdata('success') ?></p>
-                            </div>
-                        <?php else: ?>
-                            <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                            </div>
-                            <div>
-                                <p class="text-sm font-bold text-navy">Error</p>
-                                <p class="text-[11px] text-gray-500 font-medium"><?= session()->getFlashdata('error') ?></p>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-                <script>
-                    setTimeout(() => {
-                        const toast = document.getElementById('toast');
-                        toast.classList.remove('translate-x-full');
-                        setTimeout(() => {
-                            toast.classList.add('translate-x-full');
-                        }, 3000);
-                    }, 100);
-                </script>
-            <?php endif; ?>
 
             <!-- Tab Navigation -->
             <div class="flex flex-wrap gap-2 mb-8 bg-white p-2 rounded-2xl shadow-sm border border-gray-100">
@@ -86,7 +54,7 @@
                     <div class="px-6 py-4 border-b border-gray-50 bg-gray-50/30">
                         <h3 class="font-bold text-navy">Hero Section Content</h3>
                     </div>
-                    <form action="<?= base_url('admin/update-section') ?>" method="POST" class="p-6 space-y-4">
+                    <form action="<?= base_url('admin/update-section') ?>" method="POST" enctype="multipart/form-data" class="p-6 space-y-4">
                         <input type="hidden" name="section_key" value="hero">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
@@ -96,14 +64,62 @@
                             <div>
                                 <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Main Title</label>
                                 <input type="text" name="title" value="<?= esc($hero['title']) ?>" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm">
+                                <p class="text-[10px] text-gray-500 mt-1.5"><span class="font-bold text-teal-accent">Tip:</span> Wrap words in ** to highlight them in teal. Example: <span class="text-gray-400 font-mono">One-Stop Solution for **Hospitals**</span></p>
                             </div>
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Description</label>
                             <textarea name="description" rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm resize-none"><?= esc($hero['description']) ?></textarea>
                         </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Background Image (Upload)</label>
+                                <input type="file" name="image_file" accept="image/*" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm bg-gray-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Or Image URL</label>
+                                <input type="url" name="image_url" value="<?= esc($hero['image'] ?? '') ?>" placeholder="https://..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm">
+                            </div>
+                        </div>
                         <div class="flex justify-end">
                             <button type="submit" class="bg-teal-accent text-white px-8 py-3 rounded-xl font-bold text-sm hover:bg-teal-accent-dark transition-all">Update Hero</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Industries Served Section -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-8">
+                    <div class="px-6 py-4 border-b border-gray-50 bg-gray-50/30">
+                        <h3 class="font-bold text-navy">Industries Served (Hospital Sector)</h3>
+                    </div>
+                    <form action="<?= base_url('admin/update-section') ?>" method="POST" enctype="multipart/form-data" class="p-6 space-y-4">
+                        <input type="hidden" name="section_key" value="industries">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Subtitle / Tagline</label>
+                                <input type="text" name="subtitle" value="<?= esc($industries['subtitle'] ?? '') ?>" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Main Title</label>
+                                <input type="text" name="title" value="<?= esc($industries['title'] ?? '') ?>" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Description</label>
+                            <textarea name="description" rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm resize-none"><?= esc($industries['description'] ?? '') ?></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Image (Upload)</label>
+                                <input type="file" name="image_file" accept="image/*" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm bg-gray-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-400 uppercase mb-2">Or Image URL</label>
+                                <input type="url" name="image_url" value="<?= esc($industries['image'] ?? '') ?>" placeholder="https://..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-teal-accent outline-none text-sm">
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit" class="bg-teal-accent text-white px-8 py-3 rounded-xl font-bold text-sm hover:bg-teal-accent-dark transition-all">Update Section</button>
                         </div>
                     </form>
                 </div>
@@ -598,27 +614,6 @@
             }
         }
 
-        // Mobile Sidebar Toggle
-        const sidebar = document.getElementById('sidebar');
-        const overlay = document.getElementById('sidebar-overlay');
-        const mobileToggle = document.getElementById('mobile-sidebar-toggle');
-        const closeSidebar = document.getElementById('sidebar-close');
-
-        function openMenu() {
-            sidebar.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
-        }
-
-        function closeMenu() {
-            sidebar.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
-
-        if(mobileToggle) mobileToggle.addEventListener('click', openMenu);
-        if(closeSidebar) closeSidebar.addEventListener('click', closeMenu);
-        if(overlay) overlay.addEventListener('click', closeMenu);
     </script>
 </body>
 </html>

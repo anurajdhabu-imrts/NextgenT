@@ -14,15 +14,26 @@ class MainModel extends Model
         $this->db = \Config\Database::connect();
     }
 
-    /**
-     * Get admin details by username
-     */
     public function getAdminByUsername($username)
     {
         return $this->db->table('admins')
-                        ->where('username', $username)
-                        ->get()
-                        ->getRowArray();
+            ->where('username', $username)
+            ->get()
+            ->getRowArray();
+    }
+
+    /**
+     * Get admin details by username or email
+     */
+    public function getAdminByIdentifier($identifier)
+    {
+        return $this->db->table('admins')
+            ->groupStart()
+            ->where('username', $identifier)
+            ->orWhere('email', $identifier)
+            ->groupEnd()
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -39,9 +50,9 @@ class MainModel extends Model
     public function getAll($table, $orderBy = 'id', $direction = 'ASC')
     {
         return $this->db->table($table)
-                        ->orderBy($orderBy, $direction)
-                        ->get()
-                        ->getResultArray();
+            ->orderBy($orderBy, $direction)
+            ->get()
+            ->getResultArray();
     }
 
     /**
@@ -58,9 +69,9 @@ class MainModel extends Model
     public function getById($table, $id)
     {
         return $this->db->table($table)
-                        ->where('id', $id)
-                        ->get()
-                        ->getRowArray();
+            ->where('id', $id)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -77,8 +88,8 @@ class MainModel extends Model
     public function updateData($table, $id, $data)
     {
         return $this->db->table($table)
-                        ->where('id', $id)
-                        ->update($data);
+            ->where('id', $id)
+            ->update($data);
     }
 
     /**
@@ -87,8 +98,8 @@ class MainModel extends Model
     public function deleteData($table, $id)
     {
         return $this->db->table($table)
-                        ->where('id', $id)
-                        ->delete();
+            ->where('id', $id)
+            ->delete();
     }
 
     /**
@@ -97,9 +108,9 @@ class MainModel extends Model
     public function getSection($key)
     {
         return $this->db->table('homepage_sections')
-                        ->where('section_key', $key)
-                        ->get()
-                        ->getRowArray();
+            ->where('section_key', $key)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -108,8 +119,8 @@ class MainModel extends Model
     public function updateSection($key, $data)
     {
         return $this->db->table('homepage_sections')
-                        ->where('section_key', $key)
-                        ->update($data);
+            ->where('section_key', $key)
+            ->update($data);
     }
 
     /**
@@ -118,9 +129,9 @@ class MainModel extends Model
     public function getAboutSection($key)
     {
         return $this->db->table('about_sections')
-                        ->where('section_key', $key)
-                        ->get()
-                        ->getRowArray();
+            ->where('section_key', $key)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -129,8 +140,8 @@ class MainModel extends Model
     public function updateAboutSection($key, $data)
     {
         return $this->db->table('about_sections')
-                        ->where('section_key', $key)
-                        ->update($data);
+            ->where('section_key', $key)
+            ->update($data);
     }
 
     /**
@@ -139,9 +150,9 @@ class MainModel extends Model
     public function getServicesSection($key)
     {
         return $this->db->table('services_sections')
-                        ->where('section_key', $key)
-                        ->get()
-                        ->getRowArray();
+            ->where('section_key', $key)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -150,8 +161,8 @@ class MainModel extends Model
     public function updateServicesSection($key, $data)
     {
         return $this->db->table('services_sections')
-                        ->where('section_key', $key)
-                        ->update($data);
+            ->where('section_key', $key)
+            ->update($data);
     }
 
     /**
@@ -160,9 +171,9 @@ class MainModel extends Model
     public function getFourMSection($key)
     {
         return $this->db->table('four_m_sections')
-                        ->where('section_key', $key)
-                        ->get()
-                        ->getRowArray();
+            ->where('section_key', $key)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -171,8 +182,8 @@ class MainModel extends Model
     public function updateFourMSection($key, $data)
     {
         return $this->db->table('four_m_sections')
-                        ->where('section_key', $key)
-                        ->update($data);
+            ->where('section_key', $key)
+            ->update($data);
     }
 
     /**
@@ -181,9 +192,9 @@ class MainModel extends Model
     public function getHospitalSection($key)
     {
         return $this->db->table('hospital_sections')
-                        ->where('section_key', $key)
-                        ->get()
-                        ->getRowArray();
+            ->where('section_key', $key)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -192,8 +203,8 @@ class MainModel extends Model
     public function updateHospitalSection($key, $data)
     {
         return $this->db->table('hospital_sections')
-                        ->where('section_key', $key)
-                        ->update($data);
+            ->where('section_key', $key)
+            ->update($data);
     }
 
     /**
@@ -202,9 +213,9 @@ class MainModel extends Model
     public function getProjectSection($key)
     {
         return $this->db->table('projects_sections')
-                        ->where('section_key', $key)
-                        ->get()
-                        ->getRowArray();
+            ->where('section_key', $key)
+            ->get()
+            ->getRowArray();
     }
 
     /**
@@ -213,7 +224,129 @@ class MainModel extends Model
     public function updateProjectSection($key, $data)
     {
         return $this->db->table('projects_sections')
-                        ->where('section_key', $key)
-                        ->update($data);
+            ->where('section_key', $key)
+            ->update($data);
+    }
+
+    /**
+     * Contact Content methods
+     */
+    public function getContactContent()
+    {
+        return $this->db->table('contact_content')->where('id', 1)->get()->getRowArray();
+    }
+
+    public function updateContactContent($data)
+    {
+        return $this->db->table('contact_content')->where('id', 1)->update($data);
+    }
+
+    /**
+     * Enquiries methods
+     */
+    public function insertEnquiry($data)
+    {
+        return $this->db->table('enquiries')->insert($data);
+    }
+
+    public function getEnquiries()
+    {
+        return $this->db->table('enquiries')->orderBy('created_at', 'DESC')->get()->getResultArray();
+    }
+
+    public function searchEnquiries($q)
+    {
+        return $this->db->table('enquiries')
+            ->groupStart()
+                ->like('name', $q)
+                ->orLike('email', $q)
+                ->orLike('company', $q)
+                ->orLike('message', $q)
+                ->orLike('phone', $q)
+                ->orLike('industry_focus', $q)
+            ->groupEnd()
+            ->orderBy('created_at', 'DESC')
+            ->get()
+            ->getResultArray();
+    }
+
+    public function deleteEnquiry($id)
+    {
+        return $this->db->table('enquiries')->where('id', $id)->delete();
+    }
+
+    public function updateEnquiryStatus($id, $status)
+    {
+        return $this->db->table('enquiries')->where('id', $id)->update(['status' => $status]);
+    }
+
+    public function getRecentEnquiries($limit = 5)
+    {
+        return $this->db->table('enquiries')
+            ->orderBy('created_at', 'DESC')
+            ->limit($limit)
+            ->get()
+            ->getResultArray();
+    }
+
+    /**
+     * Registration Methods
+     */
+    public function insertUser($data)
+    {
+        return $this->db->table('admins')->insert($data);
+    }
+
+    public function checkUsernameExists($username)
+    {
+        return $this->db->table('admins')->where('username', $username)->countAllResults() > 0;
+    }
+
+    public function checkEmailExists($email)
+    {
+        return $this->db->table('admins')->where('email', $email)->countAllResults() > 0;
+    }
+
+    public function updateResetToken($email, $token, $expiresAt)
+    {
+        return $this->db->table('admins')
+            ->where('email', $email)
+            ->update([
+                'reset_token' => $token,
+                'reset_expires_at' => $expiresAt
+            ]);
+    }
+
+    public function getAdminByToken($token)
+    {
+        return $this->db->table('admins')
+            ->where('reset_token', $token)
+            ->where('reset_expires_at >', date('Y-m-d H:i:s'))
+            ->get()
+            ->getRowArray();
+    }
+
+    public function resetPasswordID($id, $newPassword)
+    {
+        return $this->db->table('admins')
+            ->where('id', $id)
+            ->update([
+                'password' => $newPassword,
+                'reset_token' => null,
+                'reset_expires_at' => null
+            ]);
+    }
+
+    /**
+     * Website Settings
+     */
+    public function getSettings()
+    {
+        return $this->db->table('website_settings')->where('id', 1)->get()->getRowArray();
+    }
+
+    public function updateSettings($data)
+    {
+        return $this->db->table('website_settings')->where('id', 1)->update($data);
     }
 }

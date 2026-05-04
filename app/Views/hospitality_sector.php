@@ -4,7 +4,7 @@
 <section class="relative overflow-hidden bg-navy py-20 lg:py-28">
     <div class="absolute inset-0">
         <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80"
-            alt="Hospitality Sector" class="w-full h-full object-cover opacity-20" />
+            alt="Hotels and Hospitality Sector Solutions by NextgenT Enterprises" class="w-full h-full object-cover opacity-20" />
         <div class="absolute inset-0 bg-navy/80 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-transparent"></div>
     </div>
@@ -35,7 +35,7 @@
                             <span class="text-teal-accent font-bold">01</span>
                         </div>
                         <div>
-                            <h4 class="text-navy font-bold text-lg mb-1">Guest Experience & Loyalty</h4>
+                            <h3 class="text-navy font-bold text-lg mb-1">Guest Experience & Loyalty</h3>
                             <p class="text-slate-500 text-sm">Delivering consistent, highly customized service across all touchpoints to cultivate brand advocates and secure repeat business.</p>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                             <span class="text-teal-accent font-bold">02</span>
                         </div>
                         <div>
-                            <h4 class="text-navy font-bold text-lg mb-1">Staffing & Performance</h4>
+                            <h3 class="text-navy font-bold text-lg mb-1">Staffing & Performance</h3>
                             <p class="text-slate-500 text-sm">Attracting, proactively training, and retaining front-line and management talent dedicated to operational service excellence.</p>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
             <div class="lg:w-1/2" data-aos="fade-left">
                 <div class="relative">
                     <div class="absolute inset-0 bg-teal-accent rounded-3xl transform -translate-x-4 translate-y-4 opacity-20"></div>
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hospitality Excellence" class="relative rounded-3xl shadow-xl w-full object-cover h-[500px]" />
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Luxury Hotel and Resort Operations Excellence by NextgenT" class="relative rounded-3xl shadow-xl w-full object-cover h-[500px]" />
                 </div>
             </div>
         </div>
@@ -102,19 +102,19 @@
         <h2 class="text-2xl font-bold text-navy mb-10 text-center" data-aos="fade-up">Targeted Hospitality Solutions</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-lg transition-all" data-aos="fade-up">
-                <h4 class="text-navy font-bold mb-1">Pre-Opening Support</h4>
+                <h3 class="text-navy font-bold mb-1">Pre-Opening Support</h3>
                 <p class="text-xs text-slate-500">End-to-end launch strategies and comprehensive readiness planning.</p>
             </div>
             <div class="p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="100">
-                <h4 class="text-navy font-bold mb-1">F&B Consulting</h4>
+                <h3 class="text-navy font-bold mb-1">F&B Consulting</h3>
                 <p class="text-xs text-slate-500">Detail-oriented menu engineering and exact operational oversight.</p>
             </div>
             <div class="p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="200">
-                <h4 class="text-navy font-bold mb-1">Guest Journey Audits</h4>
+                <h3 class="text-navy font-bold mb-1">Guest Journey Audits</h3>
                 <p class="text-xs text-slate-500">Meticulous mapping and active refinement of every stay touchpoint.</p>
             </div>
             <div class="p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300">
-                <h4 class="text-navy font-bold mb-1">Brand Standards</h4>
+                <h3 class="text-navy font-bold mb-1">Brand Standards</h3>
                 <p class="text-xs text-slate-500">Strict auditing of brand identity metrics and service consistency.</p>
             </div>
         </div>

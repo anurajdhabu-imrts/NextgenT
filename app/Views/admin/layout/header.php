@@ -1,3 +1,39 @@
+<!-- Global Admin Toast Notification -->
+<?php if(session()->getFlashdata('success') || session()->getFlashdata('error')): ?>
+    <div id="admin-toast" class="fixed top-24 right-6 min-w-[300px] z-[9999] transition-all duration-500 transform translate-x-full">
+        <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 flex items-center gap-4">
+            <?php if(session()->getFlashdata('success')): ?>
+                <div class="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center text-green-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                    <p class="text-sm font-bold text-navy">Success!</p>
+                    <p class="text-[11px] text-gray-500 font-medium"><?= session()->getFlashdata('success') ?></p>
+                </div>
+            <?php else: ?>
+                <div class="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </div>
+                <div>
+                    <p class="text-sm font-bold text-navy">Error</p>
+                    <p class="text-[11px] text-gray-500 font-medium"><?= session()->getFlashdata('error') ?></p>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toast = document.getElementById('admin-toast');
+            setTimeout(() => {
+                toast.classList.remove('translate-x-full');
+                setTimeout(() => {
+                    toast.classList.add('translate-x-full');
+                }, 4000);
+            }, 300);
+        });
+    </script>
+<?php endif; ?>
+
 <header class="bg-white border-b border-gray-100 flex items-center justify-between px-6 h-16 sticky top-0 z-10">
     <!-- Breadcrumbs / Page Title -->
     <div class="flex items-center gap-4">
@@ -15,10 +51,12 @@
     <!-- Right Actions -->
     <div class="flex items-center gap-5">
         <!-- Search -->
-        <div class="hidden sm:flex relative">
-            <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-lg text-sm focus:ring-2 focus:ring-teal-accent/20 outline-none w-64 transition-all">
-            <svg class="w-4 h-4 absolute left-3 top-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </div>
+        <form action="<?= base_url('admin/enquiries') ?>" method="GET" class="hidden sm:flex relative">
+            <input type="text" name="q" value="<?= esc(request()->getGet('q')) ?>" placeholder="Search..." class="pl-10 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-lg text-sm focus:ring-2 focus:ring-teal-accent/20 outline-none w-64 transition-all">
+            <button type="submit" class="absolute left-3 top-3 text-gray-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </button>
+        </form>
 
         <!-- Notifications -->
         <button class="relative p-2 text-gray-400 hover:text-navy transition-colors">

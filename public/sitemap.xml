@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://nextgent.com/</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,7 +15,7 @@
     <!-- About Us -->
     <url>
         <loc>https://nextgent.com/about</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -23,7 +23,7 @@
     <!-- Services -->
     <url>
         <loc>https://nextgent.com/services</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -31,31 +31,15 @@
     <!-- 4M Framework -->
     <url>
         <loc>https://nextgent.com/4m-framework</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-    </url>
-
-    <!-- Industries -->
-    <url>
-        <loc>https://nextgent.com/industries</loc>
-        <lastmod>2026-04-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
     </url>
 
     <!-- Hospital Sector -->
     <url>
         <loc>https://nextgent.com/hospital-sector</loc>
-        <lastmod>2026-04-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Hospitality Sector -->
-    <url>
-        <loc>https://nextgent.com/hospitality-sector</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -63,25 +47,33 @@
     <!-- Projects & Case Studies -->
     <url>
         <loc>https://nextgent.com/projects</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-    </url>
-
-    <!-- Team -->
-    <url>
-        <loc>https://nextgent.com/team</loc>
-        <lastmod>2026-04-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
     </url>
 
     <!-- Contact Us -->
     <url>
         <loc>https://nextgent.com/contact</loc>
-        <lastmod>2026-04-22</lastmod>
+        <lastmod>2026-05-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://nextgent.com/privacy-policy</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- Terms & Conditions -->
+    <url>
+        <loc>https://nextgent.com/terms-conditions</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 
 </urlset>

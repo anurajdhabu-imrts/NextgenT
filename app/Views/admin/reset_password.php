@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login | NextgenT</title>
+    <title>Reset Password | NextgenT</title>
     <link rel="icon" href="<?= base_url('FAVICON.png') ?>" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -39,12 +39,13 @@
             <h1 class="text-3xl font-bold text-navy">
                 NextgenT<span class="text-teal-accent ml-1">Enterprises</span>
             </h1>
-            <p class="text-gray-500 mt-2 text-sm">Secure Admin Access</p>
+            <p class="text-gray-500 mt-2 text-sm">Secure Account Reset</p>
         </div>
 
-        <!-- Login Card -->
+        <!-- Reset Password Card -->
         <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
-            <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Login to Dashboard</h2>
+            <h2 class="text-xl font-semibold text-gray-800 mb-2 text-center">Set New Password</h2>
+            <p class="text-gray-500 text-sm mb-6 text-center">Please enter and confirm your new administrator password.</p>
             
             <?php if (session()->getFlashdata('error')): ?>
                 <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
@@ -52,49 +53,36 @@
                 </div>
             <?php endif; ?>
 
-            <form action="<?= base_url('admin/login-submit') ?>" method="post" class="space-y-5">
+            <form action="<?= base_url('admin/reset-password-submit') ?>" method="post" class="space-y-5">
                 <?= csrf_field() ?>
+                <input type="hidden" name="token" value="<?= $token ?>">
+                
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1.5" for="username">Username / Email</label>
-                    <input type="text" id="username" name="username" value="<?= old('username') ?>" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent outline-none transition-all" placeholder="Enter your username">
+                    <label class="block text-sm font-medium text-gray-700 mb-1.5" for="password">New Password</label>
+                    <input type="password" id="password" name="password" required minlength="6" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent outline-none transition-all" placeholder="••••••••">
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1.5" for="password">Password</label>
-                    <input type="password" id="password" name="password" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent outline-none transition-all" placeholder="••••••••">
-                </div>
-
-                <div class="flex items-center justify-between text-sm mt-2">
-                    <label class="flex items-center text-gray-600">
-                        <input type="checkbox" class="rounded border-gray-300 text-teal-accent focus:ring-teal-accent mr-2">
-                        Remember me
-                    </label>
-                    <a href="<?= base_url('admin/forgot-password') ?>" class="text-teal-accent hover:text-teal-accent-dark font-medium">Forgot password?</a>
+                    <label class="block text-sm font-medium text-gray-700 mb-1.5" for="confirm_password">Confirm New Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="6" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent outline-none transition-all" placeholder="••••••••">
                 </div>
 
                 <button type="submit" class="w-full bg-navy text-white font-bold py-3.5 rounded-xl hover:bg-navy-light transition-all transform active:scale-[0.98] shadow-lg shadow-navy/20">
-                    Sign In
+                    Update Password
                 </button>
             </form>
 
-            <div class="mt-6 text-center">
-                <p class="text-sm text-gray-500">
-                    Don't have an account? 
-                    <a href="<?= base_url('admin/register') ?>" class="text-teal-accent font-semibold hover:text-teal-accent-dark">Register</a>
-                </p>
-            </div>
-
             <div class="mt-8 pt-6 border-t border-gray-100 text-center">
                 <p class="text-xs text-gray-400">
-                    &copy; <?= date('Y') ?> NextgenT Enterprises. All rights reserved.
+                    Connecting your vision to operational reality.
                 </p>
             </div>
         </div>
 
         <div class="mt-6 text-center">
-            <a href="<?= base_url('/') ?>" class="text-sm text-gray-500 hover:text-navy flex items-center justify-center gap-2">
+            <a href="<?= base_url('admin/login') ?>" class="text-sm text-gray-500 hover:text-navy flex items-center justify-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-                Back to Website
+                Back to Login
             </a>
         </div>
     </div>
